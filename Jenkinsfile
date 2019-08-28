@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                bat '''C:\\Program Files (x86)\\Jenkins\\workspace\\SpringWebAppPipeline\\target\\*.war  C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5_Tomcat8.1\\webapps'''
+                bat '''copy C:\\Program Files (x86)\\Jenkins\\workspace\\SpringWebAppPipeline\\target\\*.war  C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5_Tomcat8.1\\webapps'''
             }
         }
     }
